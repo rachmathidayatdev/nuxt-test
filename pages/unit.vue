@@ -16,8 +16,11 @@
         sm="6"
         xs="6"
       >
-        <v-card class="mx-auto recommendation" max-width="374">
+        <v-card class="mx-auto recommendation" max-width="374" min-height="420">
           <v-img height="250" :src="item.image.url"></v-img>
+          <div class="rating">
+            <v-icon size="12">mdi-star</v-icon> {{ item.rating }}
+          </div>
           <v-card-title>
             <h3 class="title">{{ item.name }}</h3>
           </v-card-title>
@@ -25,7 +28,14 @@
             <div class="desc">
               {{ item.address }}
             </div>
-            <div class="price">Rp {{ numberFormat(item.sellingPrice) }}</div>
+            <div class="price">
+              <span
+                v-if="item.originalPrice !== item.sellingPrice"
+                class="strike-through"
+                >Rp {{ numberFormat(item.originalPrice) }}</span
+              >
+              <span>Rp {{ numberFormat(item.sellingPrice) }} / month</span>
+            </div>
           </v-card-text>
         </v-card>
       </v-col>

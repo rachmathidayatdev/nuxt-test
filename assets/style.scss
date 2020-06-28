@@ -231,3 +231,14 @@ a {
       font-size: 14px;
       padding: 5px 0 5px 0;
   }
+
+  .rating {
+    position: absolute;
+    width: 40px;
+    background-color: #fff;
+    top: 231px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
