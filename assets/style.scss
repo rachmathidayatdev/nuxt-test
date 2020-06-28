@@ -1,0 +1,233 @@
+.appbar-custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.relative {
+    position: relative;
+
+    .absolute-right--form {
+        position: absolute;
+        right: 0;
+        top: 65px;
+        z-index: 9999;
+    }
+}
+
+.text-centered {
+    text-align: center !important;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+form {
+    p.text-line {
+        width: 100%; 
+        text-align: center; 
+        border-bottom: 1px solid lightgrey; 
+        line-height: 0.1em;
+        margin: 20px 0 20px; 
+     } 
+     
+     p.text-line span { 
+         background:#fff; 
+         padding: 10px 10px; 
+     }
+
+    .btn-social--media {
+        text-transform: none !important;
+
+        .btn-item {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .v-btn__content {
+        justify-content: start !important;
+    }
+
+    div {
+        p.label-item {
+            font-size: 14px;
+            margin-top: 10px;
+
+            .label-item--link {
+                color: #FF5722;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.v-carousel__controls {
+    left: auto !important;
+    right: auto !important;
+    bottom: 50px !important;
+    position: absolute !important;
+    z-index: 0 !important;
+}
+
+.card-information {
+    max-width: 100%;
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.calendar-check--in {
+    position: absolute !important;
+    top: 140px !important;
+    z-index: 100 !important;
+}
+
+.no-padding-t-b {
+    padding-top: unset !important;
+    padding-bottom: unset !important;
+}
+
+.title {
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.sub-title {
+    font-size: 14px;
+}
+
+.mtm-20 {
+    margin-top: -20px;
+}
+
+.category-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recommendation {
+    .v-card__title {
+        .title {
+            font-size: 16px !important;
+        }
+    }
+
+    .v-card__text {
+        .desc {
+            font-size: 12px;
+        }
+        .price {
+            font-weight: 700;
+            color: #f05147;
+
+            .strike-through {
+                position: relative;
+                &::after{
+                    content: "";
+                    width: 100%;
+                    height: 1px;
+                    background: black;
+                    position: absolute;
+                    left: 0;
+                    top: 8px;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        box-shadow: 0 3px 5px #f05147 !important;
+    }
+}
+
+.swiper-container.swiper.custom.swiper-container-initialized.swiper-container-horizontal {
+    margin-top: 0 !important;
+    z-index: 0 !important;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    background-color: #fff !important;
+    border-radius: 25px !important;
+    height: 30px !important;
+    width: 30px !important;
+    box-shadow: 0 3px 5px #eaeaea !important;
+
+    &::after {
+        font-size: 15px !important;
+        color: #dc3545 !important;
+    }
+}
+
+.nuxt-link-active {
+    text-decoration: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.discount {
+    width: 90px;
+    height: 20px;
+    background: #00C853;
+    position: absolute;
+    top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-left: 10px solid white;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: -10px;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-left: 10px solid #00C853;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+      }
+  }
+
+  .footer-container {
+      background-color: #454545;
+
+      .footer-content {
+        display: flex;
+        flex-direction: column;
+      }
+  }
+
+  .text-white {
+      color: #fff !important;
+  }
+
+  .text-brown {
+      color: #bebebe !important;
+      font-size: 14px;
+      padding: 5px 0 5px 0;
+  }
