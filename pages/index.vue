@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-resize="onResize">
     <carousel />
     <v-container class="light relative">
       <!-- search section -->
@@ -76,9 +76,7 @@
       <!-- steper -->
       <div v-if="screenSize !== 'xs' && screenSize !== 'sm'">
         <h2 class="title">Are You a Landlord? {{ screenSize }}</h2>
-        <p>
-          We invite you to join our Rumah Kost Network
-        </p>
+        <p>We invite you to join our Rumah Kost Network {{ screenSize }}</p>
         <v-stepper alt-labels class="custom">
           <v-stepper-header>
             <v-stepper-step step="1">
@@ -174,7 +172,7 @@ export default {
   data() {
     return {
       location: '',
-      screenSize: 'lg',
+      screenSize: 'sm',
     }
   },
   computed: {
@@ -184,10 +182,12 @@ export default {
       !this.$v.location.required && errors.push('Location is required.')
       return errors
     },
+    tester() {
+      return this.screenSize
+    },
   },
   async created() {
     await this.$store.dispatch('home/fetchHomeData')
-    this.onResize()
   },
   methods: {
     searchLocation() {

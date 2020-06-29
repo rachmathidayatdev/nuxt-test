@@ -206,16 +206,18 @@ export default {
       this.showSignup = false
     },
     onResize() {
-      if (window.innerWidth > 1904) {
-        this.screenSize = 'xl'
-      } else if (window.innerWidth > 1264 && window.innerWidth < 1904) {
-        this.screenSize = 'lg'
-      } else if (window.innerWidth > 960 && window.innerWidth < 1264) {
-        this.screenSize = 'md'
-      } else if (window.innerWidth > 600 && window.innerWidth < 960) {
-        this.screenSize = 'sm'
-      } else {
-        this.screenSize = 'xs'
+      if (process.browser) {
+        if (window.innerWidth > 1904) {
+          this.screenSize = 'xl'
+        } else if (window.innerWidth > 1264 && window.innerWidth < 1904) {
+          this.screenSize = 'lg'
+        } else if (window.innerWidth > 960 && window.innerWidth < 1264) {
+          this.screenSize = 'md'
+        } else if (window.innerWidth > 600 && window.innerWidth < 960) {
+          this.screenSize = 'sm'
+        } else {
+          this.screenSize = 'xs'
+        }
       }
     },
     signOut() {
