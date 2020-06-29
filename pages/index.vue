@@ -72,6 +72,84 @@
       </p>
       <swiper-recommendation />
       <!-- sampai sini -->
+
+      <!-- steper -->
+      <h2 class="title">Are You a Landlord?</h2>
+      <p>
+        We invite you to join our Rumah Kost Network
+      </p>
+      <v-stepper alt-labels class="custom">
+        <v-stepper-header>
+          <v-stepper-step step="1">
+            <div class="stepper-item">
+              <v-avatar min-width="100" height="100" width="100">
+                <img
+                  src="https://roomme.id/public/img/4d4ac91.svg"
+                  alt="John"
+                  height="100"
+                  width="100"
+                />
+              </v-avatar>
+              <h3 class="my-3">Register Your Unit</h3>
+              <p>Fill out our form</p>
+            </div>
+          </v-stepper-step>
+
+          <v-divider class="custom"></v-divider>
+
+          <v-stepper-step step="2">
+            <div class="stepper-item">
+              <v-avatar min-width="100" height="100" width="100">
+                <img
+                  src="https://roomme.id/public/img/c087d0c.svg"
+                  alt="John"
+                  height="100"
+                  width="100"
+                />
+              </v-avatar>
+              <h3 class="my-3">Wait For Visit</h3>
+              <p>
+                Our staff will be in touch with you and schedule a site visit
+              </p>
+            </div>
+          </v-stepper-step>
+
+          <v-divider class="custom"></v-divider>
+
+          <v-stepper-step step="3">
+            <div class="stepper-item">
+              <v-avatar min-width="100" height="100" width="100">
+                <img
+                  src="https://roomme.id/public/img/daeb661.svg"
+                  alt="John"
+                  height="100"
+                  width="100"
+                />
+              </v-avatar>
+              <h3 class="my-3">Contract Agreement</h3>
+              <p>Complete all the necessary document</p>
+            </div>
+          </v-stepper-step>
+
+          <v-divider class="custom"></v-divider>
+
+          <v-stepper-step step="4">
+            <div class="stepper-item">
+              <v-avatar min-width="100" height="100" width="100">
+                <img
+                  src="https://roomme.id/public/img/4764166.svg"
+                  alt="John"
+                  height="100"
+                  width="100"
+                />
+              </v-avatar>
+              <h3 class="my-3">Get Promoted</h3>
+              <p>Sit back, Relax and Get Popular!</p>
+            </div>
+          </v-stepper-step>
+        </v-stepper-header>
+      </v-stepper>
+      <!-- sampai sini -->
     </v-container>
   </div>
 </template>

@@ -246,3 +246,31 @@ a {
   .cursor-pointer {
       cursor: pointer;
   }
+
+  .v-stepper.custom {
+      box-shadow: unset !important;
+  }
+
+  .v-stepper__step__step, .v-stepper__step__step.primary {
+      background-color: #ff5722 !important;
+  }
+
+  .v-divider.custom {
+    display: block;
+    // flex: 1 1 0px;
+    max-width: 100%;
+    height: 1px;
+    max-height: 1px;
+    border: 1px dashed;
+    border-width: thin 1px 1px 3px;
+    transition: inherit;
+    border-color: #ff5722 !important;
+  }
+
+  .stepper-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
