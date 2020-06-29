@@ -13,6 +13,7 @@
             </nuxt-link>
             <img
               v-else
+              class="cursor-pointer"
               src="https://cdn.roomme.id/icons/logoroommemain.png"
               height="30px"
               width="100px"

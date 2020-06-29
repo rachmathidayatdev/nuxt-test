@@ -67,5 +67,17 @@ export default {
       return numeral(val).format('0,0')
     },
   },
+  head: {
+    title: 'Unit Listing page',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Unit Listing page description',
+      },
+    ],
+    noscript: [{ innerHTML: 'Body No Scripts', body: true }],
+    script: [],
+  },
 }
 </script>

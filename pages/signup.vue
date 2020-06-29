@@ -14,5 +14,17 @@ export default {
   components: {
     signupForm,
   },
+  head: {
+    title: 'Sign Up page',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Sign Up page description',
+      },
+    ],
+    noscript: [{ innerHTML: 'Body No Scripts', body: true }],
+    script: [],
+  },
 }
 </script>

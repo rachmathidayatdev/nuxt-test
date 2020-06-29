@@ -91,9 +91,6 @@ export default {
     swiperRecommendation,
   },
   mixins: [validationMixin],
-  validations: {
-    location: { required },
-  },
   data() {
     return {
       location: '',
@@ -119,6 +116,21 @@ export default {
         this.$router.push({ name: 'unit', query: { location: this.location } })
       }
     },
+  },
+  head: {
+    title: 'Home page',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Home page description',
+      },
+    ],
+    noscript: [{ innerHTML: 'Body No Scripts', body: true }],
+    script: [],
+  },
+  validations: {
+    location: { required },
   },
 }
 </script>

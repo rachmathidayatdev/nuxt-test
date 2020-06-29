@@ -15,5 +15,17 @@ export default {
   components: {
     loginForm,
   },
+  head: {
+    title: 'Sign In page',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Sign In page description',
+      },
+    ],
+    noscript: [{ innerHTML: 'Body No Scripts', body: true }],
+    script: [],
+  },
 }
 </script>
